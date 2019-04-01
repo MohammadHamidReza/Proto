@@ -1,0 +1,348 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Jagannath Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jagannath Temple" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{url_for('static',filename = 'css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{{url_for('static',filename = 'css/shop.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- gallery desoslide -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/jquery.desoslide.css')}}">
+    <!-- gallery desoslide -->
+    <link href="{{url_for('static',filename = 'css/style.css')}}" type="text/css" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Francois+One|Great+Vibes|Merienda" rel="stylesheet">
+    <link href="{{url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+	
+	
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+	
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {% extends "base.html" %}
+    {% block content %}
+        
+        <!-- banner -->
+        <div class="banner-bg-inner">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+                        Hall Booking					
+                    </h2>
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div>
+        <br><br><br>
+		<!-- Shop -->
+	<div id="about" style="margin-top:30px;" class="mainbox aboutbox text-center">
+		<div class="panel panel-info"><br>		
+            <div class="container">	
+                <h4 class="rad-txt">
+                    <span class="abtxt1">Hall </span>
+					<span class="abtext">Details</span>     
+                </h4>
+					<form action="/hall" method="post">
+				            <p align="right" style="color:red;"> *Pricings are for 6 hours duration only.</p>		
+	                          <div class="row">
+	                              <div class="col-md-12">
+	                                   <div class="caption">					
+	 	                                     <h2> Select a Hall to Continue </h2>
+			                           </div>
+                                   </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-4">
+                                     <div class="thumbnail">
+                                            <img src="static\images\room1.jpg" alt="hall1" style="width:100%">
+                                             <div class="caption">
+                                               <p><b>Hall 1</b></p>
+		                                       <p>Capacity of 150
+		                                       <p>Non AC Hall<p>
+		                                       <p>Surround Speakers<p>
+		                                       <p>2 AC Restrooms attached<p>
+		                                       <p>Power Back-up Facility<p>
+		                                       <p><b>Rs. 3200</b></p>
+                                              </div>
+                                              <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall1"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                              </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <div class="thumbnail">
+                                           <img src="static\images\room2.jpg" alt="hall2" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>Hall 2</b></p>
+		                                           <p>Capacity of 300</p>
+		                                           <p>AC Hall</p>
+		                                           <p>Surround Speakers</p>
+		                                           <p>3 AC Restrooms attached</p>
+		                                           <p>Power Back-up Facility</p>
+		                                           <p>LED Projector available</p>
+		                                           <p><b>Rs. 6000</b></p>
+                                              </div>
+                                              <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall2"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                              </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                    <div class="thumbnail">
+                                         <img src="static\images\room3.jpg" alt="hall3" style="width:100%">
+                                             <div class="caption">
+                                                 <p><b>Hall 3</b></p>
+		                                         <p>Capacity of 500</p>
+		                                         <p>AC Hall<p>
+		                                         <p>Surround Speakers<p>
+		                                         <p>3 AC Restrooms attached<p>
+		                                         <p>Power Back-up Facility<p>
+		                                         <p>LED Projector available</p>
+		                                         <p>Advanced Ligting System</p>
+		                                         <p><b>Rs. 10000</b></p>
+                                             </div>
+                                             <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall3"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                              </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                   <div class="thumbnail">
+                                          <img src="static\images\room4.jpg" alt="hall1" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>Hall 4</b></p>
+		                                           <p>Capacity of 800</p>
+		                                           <p>AC Hall<p>
+		                                           <p>Surround Speakers<p>
+		                                           <p>3 AC Restrooms attached<p>
+		                                           <p>Power Back-up Facility<p>
+		                                           <p>LED Projector available</p>
+		                                           <p>Advanced Ligting System</p>
+		                                           <p><b>Rs. 13000</b></p>
+                                              </div>
+                                              <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall4"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                              </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4">
+                                    <div class="thumbnail">
+                                           <img src="static\images\room5.jpg" alt="hall2" style="width:100%">
+                                                 <div class="caption">
+                                                     <p><b>Hall 5</b></p>
+		                                             <p>Capacity of 1000</p>
+		                                             <p>AC Hall<p>
+		                                             <p>Surround Speakers<p>
+		                                             <p>3 AC Restrooms attached<p>
+		                                             <p>Power Back-up Facility<p>
+		                                             <p>LED Projector available</p>
+		                                             <p>Advanced Ligting System</p>
+		                                             <p><b>Rs. 15000</b></p>
+                                                 </div>
+                                                 <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall5"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                                </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="thumbnail">
+                                           <img src="static\images\room6.jpg" alt="hall3" style="width:100%">
+                                               <div class="caption">
+                                                  <p><b>Hall 6</b></p>
+		                                          <p>Capacity of 1500</p>
+		                                          <p>AC Hall<p>
+		                                          <p>Surround Speakers<p>
+		                                          <p>3 AC Restrooms attached<p>
+		                                          <p>Power Back-up Facility<p>
+		                                          <p>LED Projector available</p>
+		                                          <p>Advanced Ligting System</p>
+		                                          <p><b>Rs. 19000</b></p>
+                                              </div>
+                                              <div class="f-btn">
+                                                 <center>
+                                                        <button type="submit"  name ="hall" formaction="/hall" value="hall6"  class="btn btn-primary2">Submit</button>
+                                                 </center>
+                                              </div>
+                                  </div>
+                              </div>
+                          </div>
+                     </form>
+                 </div>
+              </div>
+  
+			<br><br>
+				<!-- //product left -->
+	</div>
+		
+ {% endblock %}	
+ 
+<!-- //home -->
+	<!-- js -->
+	<!-- Common js -->
+	<script src="{{url_for('static',filename = 'js/jquery-2.2.3.min.js')}}"></script>
+	<!--// Common js -->
+	<!-- cart-js -->
+	<script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+	
+	<script src="{{url_for('static',filename = 'js/jquery-ui.js')}}"></script>
+
+   
+
+	<!-- dropdown nav -->
+	< <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+	</script>
+	<!-- //dropdown nav -->
+	<!--search jQuery-->
+	<script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+	<!--search jQuery-->
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+	<!-- //fixed-scroll-nav-js -->
+	<!--//scripts-->
+
+	<script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+	<script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+    <!--search jQuery-->
+    <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+    <!--search jQuery-->
+    <!-- cart-js -->
+    <script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+    <script>
+        chr.render();
+
+        chr.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- gallery desoslide -->
+    <script src="{{url_for('static',filename = 'js/jquery.desoslide.min.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/demo.js')}}"></script>
+    <!-- gallery desoslide -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+    <!-- //fixed-scroll-nav-js -->
+    <!-- start-smooth-scrolling -->
+    <script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{{url_for('static',filename = 'js/SmoothScroll.min.js')}}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- about bottom grid Numscroller -->
+    <script src="{{url_for('static',filename = 'js/numscroller-1.0.js')}}"></script>
+    <!-- //about bottom grid Numscroller -->
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+</body>
+
+</html>

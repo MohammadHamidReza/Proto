@@ -1,0 +1,558 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Jagannath Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jagannath Temple" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{url_for('static',filename = 'css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{{url_for('static',filename = 'css/shop.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- gallery desoslide -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/jquery.desoslide.css')}}">
+    <!-- gallery desoslide -->
+    <link href="{{url_for('static',filename = 'css/style.css')}}" type="text/css" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Francois+One|Great+Vibes|Merienda" rel="stylesheet">
+    <link href="{{url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+	
+	
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+	
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      {% extends "base.html" %}
+      {% block content %}
+
+        <!-- banner -->
+        <div class="banner-bg-inner">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+                        Puja
+						
+                    </h2>
+
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div><br><br><br>
+		<!-- Shop -->
+		<div id="about" style="margin-top:30px;" class="mainbox aboutbox text-center">
+		<div class="panel panel-info"><br>		
+            <div class="container">	
+                <h4 class="rad-txt">
+                    <span class="abtxt1">Puja </span>
+					<span class="abtext">Details</span>
+                    
+                </h4>
+	<form action="/puja" method="post">
+	<div class="row">
+	<div class="col-md-12">
+	
+	<div class="caption">
+		<p style="color:brown;margin-left:5%;margin-right:5%;font-size: 22px;font-family:Comic Sans MS ;text-align: justify";>
+		Jagannatha is regarded as the supreme god and the sovereign monarch of the Odishan empire. The entire ritual pattern of Jagannatha has been conceived keeping such twin aspects in view. The ritual system of the temple is very elaborate and complex involving a multitude of functionaries above one thousand spread over one hundred categories. The rituals of Jagannatha can broadly be divided into three parts - the daily , the occasional and the festive. In Jagannatha temple these rituals assume the term 'niti'.
+		</p>
+	 	<h2> Select a puja to Continue </h2>
+			</div></div></div>
+  <div class="row">
+  <div class="col-md-4 col-lg-4 col-sm-4 col-xl-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja1.jpg" alt="puja1" style="width:100%">
+        <div class="caption">
+          <p><b>Dwarpitha and Mangal Aarati</b></p>
+		  <p>5 AM</p>
+		  <p>The door opens early in the morning in the presence of five specific sevayats after verification of the "seal" given by a particular sevayat in the last night. Soon after the opening of the door, Mangal Aarati is performed.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br>	
+		  <button type="submit" name="epuja" value="Dwarpitha" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4 col-sm-4 col-xl-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja2.jpg" alt="puja2" style="width:100%">
+       <div class="caption">
+		   <p><b>Mailam</b></p>
+		  <p>6AM</p>
+		  <p>"Mailam" is a word used in Sri Jagannath Temple, which means change or removal of dresses and flowers etc. At this time some specific sevaks change the clothes, flowers, Tulasi leaves of the deities worn on the previous night. After removal of clothes, the clothes known as "Tadap" and "Uttariya" are worn by the deities.
+		  </p>
+		  <p><b>Rs. 700</b></p>
+		  <br><br><br>	<br>
+		  <button type="submit" name="epuja" value="Mailam" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4 col-sm-4 col-xl-4">
+    <div class="thumbnail2">
+     
+        <img src="static\images\puja3.jpg" alt="puja3" style="width:100%">
+        <div class="caption">
+           <p><b>Abakash</b></p>
+		  <p>6AM - 6:30PM</p>
+		  <p>Purificatory rites like brushing of teeth and bath is known as "Abakash". At this time, Temple Jyotishi (Astrologer) reads out the tithi(day and date) and other astrological details of the day and according to that, that day's rituals are performed.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br>	
+		  <button type="submit" name="epuja" value="Abakash" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja4.jpg" alt="puja4" style="width:100%">
+        <div class="caption">
+           <p><b>Mailam</b></p>
+		  <p>6:45PM</p>
+		  <p>At this time deities change their clothes (Tadap and Uttariya) and wear another set of clothes. A sevak known as "Akhanda Mekap" keeps in the sanctum Akhanda Baitha i.e. one lamp which burns till "Pahuda" or the time of the retirement of the deities to bed.
+		  </p>
+		   <p><b>Rs. 700</b></p>
+        <br><br><br><br>	
+		  <button type="submit" name="epuja" value="Mailam" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja5.jpg" alt="puja5" style="width:100%">
+       <div class="caption">
+          
+           <p><b>Sahanamela</b></p>
+		  <p>7AM - 8AM</p>
+		  <p>Though this is not a part of the rituals, but about one hour is spent to facilitate pilgrims to go up to "Ratnavedi" or inner sanctums to have a Darshan, without paying fees for it.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+        <br>	
+		  <button type="submit" name="epuja" value="Sahanamela" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja6.jpg" alt="puja6" style="width:100%">
+        <div class="caption">
+          <p><b>Beshalagi</b></p>
+		  <p>8AM</p>
+		  <p>
+		  After Sahanamela the deities are again dressed up which can be witnessed from a little distance i.e." Bhitara Katha". At this time, Deities are also adorned with gold and precious stones to suit different festive occasions.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br><br><br><br>	
+		  <button type="submit" name="epuja" value="Beshalagi"  formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja1.jpg" alt="puja7" style="width:100%">
+        <div class="caption">
+           <p><b>Rosha Homa Surya Puja and Dwarapal</b></p>
+		  <p>8 a.m. to 8.30 a.m</p>
+		  <p>While some sevayats are busy with vesha lagi or the Deities, Pujapandas at that time perform "Rosha Homa" (Fire Sacrifice) at the kitchen and "Surya puja" at the surya temple near "Mukti Mandap". Then the images of two gate keepers named Jaya and Vijaya on the entrance of the Jagamohan of the Temple are worshipped.
+		  </p>
+		   <p><b>Rs. 700</b></p>
+        <br><br><br><br>	
+		  <button type="submit" name="epuja" value="Dwarapal" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja2.jpg" alt="puja8" style="width:100%">
+       <div class="caption">
+          
+           <p><b>Gopala Ballava Puja</b></p>
+		  <p>9AM</p><p>
+		  The prescribed time is 9 A.M. This is the time for breakfast of the deities. At this time sweet popcorn (Khai), Khualadus, Coconut sweets (Kora), Ripe banana, Curd, and chipped coconuts etc. are offered as bhogas. Puja is performed in a brief manner with pancha upachar only.
+		  </p><p><b>Rs. 1000</b></p>
+        <br>	
+		  <button type="submit" name="epuja" value="GopalaBallava" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja3.jpg" alt="puja9" style="width:100%">
+        <div class="caption">
+          <p><b>Sakala Dhupa(Morning food offering)</b></p>
+		  <p>10AM</p>
+		  <p>
+		  At this time puja is performed by three Pujapandas with 16 Upachars or Sodasha Upachars.
+
+</P>
+		  <p><b>Rs. 1000</b></p>
+		  <br><br><br><br>	
+		  <button type="submit" name="epuja" value="SakalaDhupa" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja5.jpg" alt="puja10" style="width:100%">
+        <div class="caption">
+           <p><b>Mailam and Bhoga Mandap</b></p>
+		  
+		  <p>
+		  After Morning Dhupa or Puja the Deities change their clothes and again Puja takes places in "Bhoga Mandap", a place behind the Garuda pillar of Jagamohan. Huge quantity of Bhogas such as Rice, Dal, Curries, Saga and Cakes of different kinds etc. are offered to the Deities.
+		  </p>
+		   <p><b>Rs. 700</b></p>
+        <br><br><br><br>	
+		  <button type="submit" name="epuja" value="BhogaMandap" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja4.jpg" alt="puja11" style="width:100%">
+       <div class="caption">
+          
+           <p><b>Madhyanha (Afternoon food offering)</b></p>
+		  <p>11 A.M. to 1 P.M</p>
+		  <p>Like Sakal Dhupa, this puja is also performed with Shodasha Upachar in the afternoon. The Bhoga items are more in number than that of Morning Dhupa. One can go near to the "Ratna Simhasan" for darshan by paying special Darshan fee of Rs. 10/- after Madhyanha Dhupa and Sakal Dhupa.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+        <br>	
+		  <button type="submit" name="epuja" value="Madhyana" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja6.jpg" alt="puja12" style="width:100%">
+        <div class="caption">
+          <p><b>Madhyanha Pahudha</b></p>
+		  <p> 1 p.m. to 1.30 p.m</p>
+		  <p>
+		  If rituals have been performed in time and if time permits, the Deities retire for the afternoon.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br><br><br><br>	
+		  <button type="submit" name="epuja" value = "MadhyanhaPahudha" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja4.jpg" alt="puja13" style="width:100%">
+        <div class="caption">
+           <p><b> Sandhya Aarati</b></p>
+		  
+		  <p>
+		  In the evening again aaratis are performed after Madhyana Dhupa Mailam. On Ekadashi day, the deities change their clothes and wear another set after "Aarati" is over.
+			</p>
+
+		   <p><b>Rs. 700</b></p>
+        <br><br><br><br>	
+		  <button type="submit" name="epuja" value="SandhyaAarati" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja5.jpg" alt="puja14" style="width:100%">
+       <div class="caption">
+          
+           <p><b>Sandhya Dhupa </b></p>
+		  <p>7P.m. to 8 P.M</p>
+		  <p>After "Sandhya Aarati" again Bhogas are offered to the deities in the same manner like Sakala and Madhyanha Dhupa but this time Bhoga amount is less in quantity and number. After Puja again lamp offering is made which is called as "Jaya Mangala Aarati".
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+        <br>	
+		  <button type="submit" name="epuja" value="SandhyaDhupa" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja6.jpg" alt="puja15" style="width:100%">
+        <div class="caption">
+          <p><b>Mailam and Chandana lagi</b></p>
+		
+		  <p>
+		  After "Sandhya Dhoopa" deities change their clothes and are annointed with Sandal paste mixed with champhor, keshar and Kasturi. One can witness this ritual by paying special Darshan fees of Rs. 10/-.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br><br><br><br>	
+		  <button type="submit" name="epuja" value="MailamandChandanalagi" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja1.jpg" alt="puja16" style="width:100%">
+        <div class="caption">
+           <p><b> Badashringar Vesha</b></p>
+		  
+		  <p>
+		  After Chandan lagi, deities are dressed with Baralagi Patta (silken robes on which some portions of Geeta Govinda of Jayadev are woven in to the texture of these robes) and flower ornaments.
+		  </p>
+
+		   <p><b>Rs. 700</b></p>
+        <br><br><br><br>	
+		  <button type="submit" name="epuja" value="BadashringarVesha" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja3.jpg" alt="puja17" style="width:100%">
+       <div class="caption">
+          
+           <p><b>Badashringara Bhoga </b></p>
+		 
+		  <p>This is the last bhoga of the day. Puja is offered with Pancha Upachar by the Puja Pandas with Pakhal (watered rice), Kadali bada, Kshiri, Kanji etc.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+        <br>	
+		  <button type="submit" name="epuja" value="BadashringaraBhoga" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail2">
+      
+        <img src="static\images\puja2.jpg" alt="puja18" style="width:100%">
+        <div class="caption">
+          <p><b> Khata Seja Lagi and Pahuda</b></p>
+		
+		  <p>
+		  The bedsteads of the deities are arranged. The Deity of "Sayan Thakura" is carried from Bhandarghar to Ratnavedi or Ratnasimhasana and place the deity near Lord Jagannath. Then follows offering of green coconut, betels and camphor aarati and then deities retire to their beds. 
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		  <br><br><br><br>	
+		  <button type="submit" name="epuja" value="KhataSeja" formaction="/puja" class="btn btn-primary">
+                                             Select</button>
+        </div>
+      
+    </div>
+  </div>
+</div>
+</form>
+</div>
+</div>
+  
+	</div>
+</div>
+			
+	
+ <!-- footer -->
+   {% endblock %}    
+<!-- //home -->
+	<!-- js -->
+	<!-- Common js -->
+	<script src="{{url_for('static',filename = 'js/jquery-2.2.3.min.js')}}"></script>
+	<!--// Common js -->
+	<!-- cart-js -->
+	<script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+	
+	<script src="{{url_for('static',filename = 'js/jquery-ui.js')}}"></script>
+	
+
+	<!-- dropdown nav -->
+	< <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+	</script>
+	<!-- //dropdown nav -->
+	<!--search jQuery-->
+	<script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+	<!--search jQuery-->
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+	<!-- //fixed-scroll-nav-js -->
+	<!--//scripts-->
+
+	<script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+	<script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+    <!--search jQuery-->
+    <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+    <!--search jQuery-->
+    <!-- cart-js -->
+    <script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+    <script>
+        chr.render();
+
+        chr.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- gallery desoslide -->
+    <script src="{{url_for('static',filename = 'js/jquery.desoslide.min.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/demo.js')}}"></script>
+    <!-- gallery desoslide -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+    <!-- //fixed-scroll-nav-js -->
+    <!-- start-smooth-scrolling -->
+    <script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{{url_for('static',filename = 'js/SmoothScroll.min.js')}}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- about bottom grid Numscroller -->
+    <script src="{{url_for('static',filename = 'js/numscroller-1.0.js')}}"></script>
+    <!-- //about bottom grid Numscroller -->
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+</body>
+
+</html>

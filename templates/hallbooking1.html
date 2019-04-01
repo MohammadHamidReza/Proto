@@ -1,0 +1,408 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Jagannath Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jagannath Temple" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{url_for('static',filename = 'css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{{url_for('static',filename = 'css/shop.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- gallery desoslide -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/jquery.desoslide.css')}}">
+    <!-- gallery desoslide -->
+    <link href="{{url_for('static',filename = 'css/style.css')}}" type="text/css" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Francois+One|Great+Vibes|Merienda" rel="stylesheet">
+    <link href="{{url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+	
+	
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+	
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    	{% extends "base.html" %}
+        {% block content %}
+        <!-- banner -->
+        <div class="banner-bg-inner">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+                        Hall Booking Details	
+						
+                    </h2>
+
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div><br><br><br>
+		<!-- //banner -->
+        {% if hall[0]=="1" %}
+		<div class="frm3">
+		    <div class="row">
+		           <div class="col-md-3" style="margin-top:100px;">
+		                  <center><h4>Selected Hall</h4></center>
+					            <div class="thumbnail">
+                                        <img src="static\images\room1.jpg" alt="hall1" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+		                                           <p>Capacity of {{ hall[3] }}</p>
+		                                           <p>{{ hall[4] }} <p>
+		                                           <p>{{ hall[5] }}<p>
+		                                           <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+	               </div>
+        {% endif %}
+        {% if hall[0]=="2" %}
+        <div class="frm3">
+            <div class="row">
+                   <div class="col-md-3" style="margin-top:100px;">
+                          <center><h4>Selected Hall</h4></center>
+                                <div class="thumbnail">
+                                        <img src="static\images\room2.jpg" alt="hall2" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+                                                   <p>Capacity of {{ hall[3] }}</p>
+                                                   <p>{{ hall[4] }} <p>
+                                                   <p>{{ hall[5] }}<p>
+                                                   <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+                   </div>
+        {% endif %}
+        {% if hall[0]=="3" %}
+        <div class="frm3">
+            <div class="row">
+                   <div class="col-md-3" style="margin-top:100px;">
+                          <center><h4>Selected Hall</h4></center>
+                                <div class="thumbnail">
+                                        <img src="static\images\room3.jpg" alt="hall3" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+                                                   <p>Capacity of {{ hall[3] }}</p>
+                                                   <p>{{ hall[4] }} <p>
+                                                   <p>{{ hall[5] }}<p>
+                                                   <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+                   </div>
+        {% endif %}
+        {% if hall[0]=="4" %}
+        <div class="frm3">
+            <div class="row">
+                   <div class="col-md-3" style="margin-top:100px;">
+                          <center><h4>Selected Hall</h4></center>
+                                <div class="thumbnail">
+                                        <img src="static\images\room4.jpg" alt="hall4" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+                                                   <p>Capacity of {{ hall[3] }}</p>
+                                                   <p>{{ hall[4] }} <p>
+                                                   <p>{{ hall[5] }}<p>
+                                                   <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+                   </div>
+        {% endif %}
+        {% if hall[0]=="5" %}
+        <div class="frm3">
+            <div class="row">
+                   <div class="col-md-3" style="margin-top:100px;">
+                          <center><h4>Selected Hall</h4></center>
+                                <div class="thumbnail">
+                                        <img src="static\images\room5.jpg" alt="hall5" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+                                                   <p>Capacity of {{ hall[3] }}</p>
+                                                   <p>{{ hall[4] }} <p>
+                                                   <p>{{ hall[5] }}<p>
+                                                   <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+                   </div>
+        {% endif %}
+        {% if hall[0]=="6" %}
+        <div class="frm3">
+            <div class="row">
+                   <div class="col-md-3" style="margin-top:100px;">
+                          <center><h4>Selected Hall</h4></center>
+                                <div class="thumbnail">
+                                        <img src="static\images\room6.jpg" alt="hall6" style="width:100%">
+                                              <div class="caption">
+                                                   <p><b>{{ hall[1] }}</b></p>
+                                                   <p>Capacity of {{ hall[3] }}</p>
+                                                   <p>{{ hall[4] }} <p>
+                                                   <p>{{ hall[5] }}<p>
+                                                   <p><b>{{ hall[3] }} per slot.</b></p>
+                                    
+                                              </div>
+                                </div>
+                   </div>
+        {% endif %}
+				   <div class="col-md-9">
+                       <div id="hallform" style="margin-top:30px;" class="mainbox formbox ">
+					   
+                              <div class="panel panel-info">
+                                  <br><center>
+				                  <h4>Please Enter you details for Hall Booking</h4><br>
+				                  <a href="{{ url_for('login') }}"><h4> Exisiting user !! Log IN here and continue filling up your details</h4></a></center>
+
+				                    <form action="/hallbooks" method="post" class="creditly-card-form shopf-sear-headinfo_form" 
+                                    oninput = "x.value=({{ hall[2] }}/{{ hall[3] }}) *parseInt(nguest.value)">
+				                              <div class="form-row">				
+			                                      <div class="form-group col-md-6">
+				                                       <label for="firstname">First Name:</label>
+				                                       <input type="text" name="fname" value="{{ fname }}" class="form-control" readonly>
+				                                  </div>
+				                                  <div class="form-group col-md-6">
+				                                       <label for="lastname">Last Name:</label>
+				                                       <input type="text" name="lname" value="{{ lname }}" class="form-control" readonly>
+				                                  </div>
+				                             </div>
+				                             <div class="form-row">
+				                                 <div class="form-group col-md-6">
+				                                      <label for="nguest">No. of guest expected</label>
+					                                  <input type="number" name="nguest" id="nguest" value="50" min="0" class="form-control" required>
+				                                </div>
+				                                <div class="form-group col-md-6">
+				                                      <label for="price">Total Price expected</label>
+					                                  <output type="number" name="x"  class="form-control" >
+				                                </div>
+				                            </div>
+				                            <div class="form-row">
+				                                <div class="form-group col-md-12">
+				                                     <label for="cause">Cause</label>
+				                                        <input type="text" class="form-control" name="purpose">
+				                               </div>
+				                            </div>
+				                            <div class="form-row">
+				                                 <div class="form-group col-md-6">
+				                                     <label for="email">Email address:</label>
+				                                     <input type="email" value="{{ email }}" class="form-control" name="email" readonly>
+				                                        
+				                                 </div>
+				                                <div class="form-group col-md-6">
+				                                     <label for="phone">Mobile No</label>
+					                                 <input name="mobileno" class="form-control" type="tel" required>
+				                                </div>
+				                           </div>
+
+                                           <div class="form-row">
+                                               <div class="form-group col-md-6">
+                                                    <label for="hall">Hall</label>
+                                                    <input type="text" class="form-control" name="halltype" value="{{ hall[1] }}" readonly >
+                                                           
+                                               </div>   
+                                          }
+				                               <div class="form-group col-md-6">
+				                                    <label for="datepicker">Date</label>
+					                                <input type="date" class="form-control" name="date" required >
+						                                   
+				                               </div>	
+			                              </div>
+
+			                              <div class="form-row">
+				                              <div class="form-group col-md-6">
+				                                   <label for="apt-time1">Start Time</label>
+					                               <div class="control">
+						                              <input type="checkbox" class="form-control" id="appt-time1" name="slotid" value="1" >
+                                          Slot 1: From 5AM to 10AM<br>
+                                          <input type="checkbox" class="form-control" id="appt-time1" name="slotid" value="2" >
+                                          Slot 1: From 10AM to 3 PM<br>
+                                          <input type="checkbox" class="form-control" id="appt-time1" name="slotid" value="3" >
+                                          Slot 1: From 3PM to 8PM<br>
+						                              <span class="hours">Temple hours: 5AM to 8PM</span>
+						                          </div>
+					                         </div>
+                                             
+					                         </div>
+			                       
+			                                
+   			                                      
+												<center>
+                          <input type="hidden" value="{{ hall[2] }}" name="HM" />
+                          <input type="hidden" value="{{ hall[3] }}" name="CP" />
+												  <button type="submit" value="Submit" class="btn btn-primary2">Submit</button>
+												 
+					                              <button type="reset" value="Reset" class="btn btn-primary1">Reset </button>
+												 
+												</center>
+										<br>
+										<br>
+										{{ msg }}
+	                              </form>			
+							</div>
+					   </div>
+					   <br><br><br>
+	            </div>
+	     </div>			
+      </div>
+   </div>
+
+			
+		
+	
+ <!-- footer -->
+          {% endblock %}    
+ 
+<!-- //home -->
+	<!-- js -->
+	<!-- Common js -->
+	<script src="{{url_for('static',filename = 'js/jquery-2.2.3.min.js')}}"></script>
+	<!--// Common js -->
+	<!-- cart-js -->
+	<script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+	
+	<script src="{{url_for('static',filename = 'js/jquery-ui.js')}}"></script>
+	
+
+	<!-- dropdown nav -->
+	< <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+	</script>
+	<!-- //dropdown nav -->
+	<!--search jQuery-->
+	<script src="{{url_for('static',filename ='js/main.js')}}"></script>
+	<!--search jQuery-->
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+	<!-- //fixed-scroll-nav-js -->
+	<!--//scripts-->
+
+	<script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+	<script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+    <!--search jQuery-->
+    <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+    <!--search jQuery-->
+    <!-- cart-js -->
+    <script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+    <script>
+        chr.render();
+
+        chr.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- gallery desoslide -->
+    <script src="{{url_for('static',filename = 'js/jquery.desoslide.min.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/demo.js')}}"></script>
+    <!-- gallery desoslide -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+    <!-- //fixed-scroll-nav-js -->
+    <!-- start-smooth-scrolling -->
+    <script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{{url_for('static',filename = 'js/SmoothScroll.min.js')}}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- about bottom grid Numscroller -->
+    <script src="{{url_for('static',filename = 'js/numscroller-1.0.js')}}"></script>
+    <!-- //about bottom grid Numscroller -->
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+</body>
+
+</html>

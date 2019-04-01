@@ -1,0 +1,257 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Jagannath Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jagannath Temple" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{url_for('static',filename = 'css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{{url_for('static',filename = 'css/shop.css')}}" type="text/css" rel="stylesheet" media="all">
+    <!-- gallery desoslide -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/jquery.desoslide.css')}}">
+    <!-- gallery desoslide -->
+    <link href="{{url_for('static',filename = 'css/style.css')}}" type="text/css" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Francois+One|Great+Vibes|Merienda" rel="stylesheet">
+    <link href="{{url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+	
+	
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+	
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+     {% extends "base.html" %}
+     {% block content %}	
+        <!-- banner -->
+        <div class="banner-bg-inner">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+                        Puja Booking Details	
+						
+                    </h2>
+
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div><br><br>
+		<!-- //banner -->
+		<div class="frm3">
+		    <div class="row">
+		           <div class="col-md-3" style="margin-top:50px;">
+		                  <center><h4>Selected Puja</h4></center>
+					            <div class="thumbnail2">
+      
+         <img src="static\images\puja1.jpg" alt="puja1" style="width:100%">
+        <div class="caption">
+          <p><b>Dwarpitha and Mangal Aarati</b></p>
+		  <p>5 AM</p>
+		  <p>The door opens early in the morning in the presence of five specific sevayats after verification of the "seal" given by a particular sevayat in the last night. Soon after the opening of the door, Mangal Aarati is performed.
+		  </p>
+		  <p><b>Rs. 1000</b></p>
+		 
+        </div>
+                                </div>
+	               </div>
+				   <div class="col-md-9">
+                       <div id="hallform" style="margin-top:30px;" class="mainbox formbox ">
+					   
+                              <div class="panel panel-info">
+                                  <br><center>
+				                  <h4>Please Enter you details for Puja Booking</h4><br>
+				                  <a href="#"><h4> Exisiting user !! Log IN here and continue filling up your details</h4></a></center>
+				                    <form action="/pujadetails" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+				                              <div class="form-row">				
+			                                      <div class="form-group col-md-6">
+				                                       <label for="tktno">Ticket No:</label>
+				                                       <input type="text"  name="tktno" class="form-control" required>
+				                                  </div>
+				                                  <div class="form-group col-md-6">
+				                                       <label for="type">Type:</label>
+				                                       <input type="text" name="type" value="{{ halltype }}" class="form-control" required>
+				                                  </div>
+				                             </div>
+				                             <div class="form-row">
+				                                <div class="form-group col-md-12">
+				                                      <label for="price">Total Price expected</label>
+					                                  <input type="number" name="price"  class="form-control" required>
+				                                </div>
+				                            </div>
+												<center>
+												  <button type="submit" value="Submit" class="btn btn-primary2">Submit</button>
+												 
+					                              <button type="reset" value="Reset" class="btn btn-primary1">Reset </button>
+												 
+												</center>
+										<br>
+										<br>
+										{{ msg }}
+	                              </form>			
+							</div>
+					   </div>
+					   <br><br><br>
+	            </div>
+	     </div>			
+      </div>
+   </div>
+
+			
+		
+	
+ <!-- footer -->
+        {% endblock %}        
+	<!-- js -->
+	<!-- Common js -->
+	<script src="{{url_for('static',filename = 'js/jquery-2.2.3.min.js')}}"></script>
+	<!--// Common js -->
+	<!-- cart-js -->
+	<script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+	
+	<script src="{{url_for('static',filename = 'js/jquery-ui.js')}}"></script>
+	
+
+	<!-- dropdown nav -->
+	< <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+	</script>
+	<!-- //dropdown nav -->
+	<!--search jQuery-->
+	<script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+	<!--search jQuery-->
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+	<!-- //fixed-scroll-nav-js -->
+	<!--//scripts-->
+
+	<script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+	<script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+    <!--search jQuery-->
+    <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+    <!--search jQuery-->
+    <!-- cart-js -->
+    <script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+    <script>
+        chr.render();
+
+        chr.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- gallery desoslide -->
+    <script src="{{url_for('static',filename = 'js/jquery.desoslide.min.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/demo.js')}}"></script>
+    <!-- gallery desoslide -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+    <!-- //fixed-scroll-nav-js -->
+    <!-- start-smooth-scrolling -->
+    <script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+    <script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{{url_for('static',filename = 'js/SmoothScroll.min.js')}}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- about bottom grid Numscroller -->
+    <script src="{{url_for('static',filename = 'js/numscroller-1.0.js')}}"></script>
+    <!-- //about bottom grid Numscroller -->
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+</body>
+
+</html>

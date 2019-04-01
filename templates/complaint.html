@@ -1,0 +1,278 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Jagannath Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jagannath Temple" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Custom Theme files -->
+	<link href="{{url_for('static',filename = 'css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+	<!-- shop css -->
+	<link href="{{url_for('static',filename = 'css/shop.css')}}" type="text/css" rel="stylesheet" media="all">
+	<link href="{{url_for('static',filename = 'css/checkout.css')}}" type="text/css" rel="stylesheet" media="all">
+	<!-- easy-responsive-tabs css -->
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/easy-responsive-tabs.css')}}" type="text/css" media="all" />
+	<link href="{{url_for('static',filename = 'css/style.css')}}" type="text/css" rel="stylesheet" media="all">
+	<!-- font-awesome icons -->
+	<link href="{{url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+	<!-- //Custom Theme files -->
+	<!-- online-fonts -->
+	<!-- logo -->
+	<link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<!-- titles -->
+	<link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+	<!-- body -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<!-- //online-fonts --><link href="https://fonts.googleapis.com/css?family=Cinzel|Francois+One|Great+Vibes|Merienda" rel="stylesheet">
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+                    
+    {% extends "base.html" %}
+    {% block content %}
+	
+		
+        <!-- banner -->
+        <div class="banner-bg-inner">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+                        Complaint
+                    </h2>
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div>
+        <br><br><br>
+		<div class="innerf-pages section">
+			<div class="container">
+				<div class="panel panel-info">
+                     <div class="pay_info">
+						<form action="/complaint" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+							<section class="creditly-wrapper payf_wrapper">					
+                                <div class="first-row form-group">
+									<div class="controls">
+									    <label class="control-label">Name *</label>
+										<input class="billing-address-name form-control" type="text" name="name" placeholder="Enter Your Name">
+									</div>
+									<div class="paymntf_card_number_grids">
+										<div class="fpay_card_number_grid_left">
+										    <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+										<div class="fpay_card_number_grid_right">
+											<div class="form-group">
+                                                 <label for="form_message">Address*</label>
+                                                 <textarea id="form_message" name="address" class="form-control" placeholder="Contact Address" rows="4" required="required" data-error="Please, leave us your address."></textarea>
+                                                 <div class="help-block with-errors"></div>
+                                           </div>
+                                        </div>
+									    <div class="clear"> </div>
+									</div>
+								    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message"> Complaint Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Please type your complain" rows="4" required="required" data-error="Kindly Enter your Complaint"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="creditly-card-form shopf-sear-headinfo_form">
+				                                <label>Member Type</label>
+						                        <div>
+                                                    <input type="radio" id="one" name="comp" value="VVIP" />
+                                                    <label for="one">VVIP</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="two" name="comp" value="VIP" />
+                                                    <label for="two">VIP</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="three" name="comp" value="Economy" />
+                                                    <label for="three">ECONOMY</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								    <div style="no-border: 1px solid #999; padding-top:20px"  class="form-group">
+                                        <div class="f-btn">
+                                            <center>
+                                             <button type="submit" class="btn btn-primary">
+                                              Submit Complaint</button>
+                                            </center>
+									    </div>
+									    <div style="font-size: 18px; color: red">
+									      {{ msg }}
+									      {{ comments }}
+									    </div>
+									</div>
+							    </div>
+							</section>
+						</form>									
+					</div>
+			    </div>
+			    <div class="clearfix"></div>
+		    </div>
+	    </div>
+					<!--//tabs-->
+		<br>
+		<!-- //payment -->
+			 {% endblock %}
+	<!-- //home -->
+	<!-- Common js -->
+	<script type="text/javascript" src="{{url_for('static',filename = 'js/jquery-2.2.3.min.js')}}"></script>
+	<!--// Common js -->
+
+	<!-- cart-js -->
+	<script src="{{url_for('static',filename = 'js/minicart.js')}}"></script>
+	<script>
+		chr.render();
+
+		chr.cart.on('new_checkout', function (evt) {
+			var items, len, i;
+
+			if (this.subtotal() > 0) {
+				items = this.items();
+
+				for (i = 0, len = items.length; i < len; i++) {}
+			}
+		});
+	</script>
+	<!-- //cart-js -->
+
+	<!-- easy-responsive-tabs -->
+	<script src="{{url_for('static',filename = 'js/easy-responsive-tabs.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+		});
+	</script>
+
+	<!-- //easy-responsive-tabs -->
+
+	<!-- credit-card -->
+	<script src="{{url_for('static',filename = 'js/creditly.js')}}"></script>
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/creditly.css')}}" type="text/css" media="all" />
+
+	<script>
+		$(function () {
+			var creditly = Creditly.initialize(
+				'.creditly-wrapper .expiration-month-and-year',
+				'.creditly-wrapper .credit-card-number',
+				'.creditly-wrapper .security-code',
+				'.creditly-wrapper .card-type');
+
+			$(".creditly-card-form .submit").click(function (e) {
+				e.preventDefault();
+				var output = creditly.validate();
+				if (output) {
+					// Your validated credit card output
+					console.log(output);
+				}
+			});
+		});
+	</script>
+	<!-- //credit-card -->
+	<!-- dropdown nav -->
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- //dropdown nav -->
+	<!--search jQuery-->
+	<script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+	<!--search jQuery-->
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="{{url_for('static',filename = 'js/scrolling-nav.js')}}"></script>
+	<!-- //fixed-scroll-nav-js -->
+	<!--//scripts-->
+	<!-- //gallery-js  -->
+	<!-- start-smooth-scrolling -->
+	<script src="{{url_for('static',filename = 'js/move-top.js')}}"></script>
+	<script src="{{url_for('static',filename = 'js/easing.js')}}"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<script src="{{url_for('static',filename = 'js/SmoothScroll.min.js')}}"></script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Bootstrap core JavaScript
+	 ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="{{url_for('static',filename = 'js/bootstrap.js')}}"></script>
+</body>
+
+</body>
+
+</html>
